@@ -1,0 +1,9 @@
+
+
+ input[type="text"] , input[type="date"]{
+    display: block;
+    margin: 10px 0;
+}
+label {
+margin: 10px 0;
+}
