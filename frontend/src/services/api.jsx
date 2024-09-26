@@ -1,6 +1,5 @@
 
-
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://todo-application-k3q8.onrender.com'
 
 export const api = {
     // create new todo
