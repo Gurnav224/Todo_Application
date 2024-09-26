@@ -8,7 +8,16 @@ const app = express();
 
 app.use(morgan("dev"))
 app.use(express.json())
-app.use(cors({origin:"*",credential:true}));
+app.use(express.urlencoded({extended:false}))
+
+
+const corsOptions = {
+    origin: "*",
+    credentials: true,
+    optionSuccessStatus: 200,
+  };
+
+app.use(cors(corsOptions));
 
 app.use(todoRouter)
 
