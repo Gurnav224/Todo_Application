@@ -54,7 +54,7 @@ const TodoController = {
       
       updateTodo: async function(req, res){
         const {id} = req.params;
-        const {title,description, completed} = req.body;
+        const {title,description, completed , dueDate} = req.body;
         console.log(id)
         console.log(title,description,completed,dueDate)
         try {
