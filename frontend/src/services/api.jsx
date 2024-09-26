@@ -24,5 +24,16 @@ export const api = {
     return fetch(`${baseUrl}/todos/${id}`,{
         method:'DELETE'
     })
+ },
+
+ // update todo by id
+ updateTodoById:(id,todo) =>{
+    return fetch(`${baseUrl}/todos/${id}`,{
+        method:"PUT",
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify(todo)
+    })
  }
 }
